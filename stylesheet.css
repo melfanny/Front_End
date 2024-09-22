@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-color: #9ACD32;
+    font-family: "Playfair Display", serif;
+}
+
+.header {
+    background-image: url("image/vegetableheader.jpg");
+    background-color: aqua;
+    text-align: center;
+    color: antiquewhite;
+    padding: 10px;
+    /* mengatur jarak setiap sisi pada text*/
+}
+
+.navbar a {
+    margin: 10px;
+    /* Mengatur jarak kiri kanan antar tulisan*/
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.calcucontainer {
+    border: 2px solid;
+    padding: 15px;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #808000;
+    text-align: center;
+    /* Meeletakkan kalkulator di tengah*/
+}
+
+.calcubox {
+    display: flex;
+    /* Posisi konten di sebelah kiri */
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    background-color: #9acd32;
+}
+
+label {
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.calcubox input,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}

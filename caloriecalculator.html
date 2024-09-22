@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title> Calorie Calculator </title>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1> Calorie Calculator </h1>
+    </header>
+    <div class="navbar">
+        <a href="home.html"> Home </a>
+        <a href="healthyrecipe.html"> Healthy Recipe </a>
+        <a href="specialdiets.html"> Special Diets </a>
+        <a href="mealplans.html"> Meal Plans </a>
+        <a href="news.html"> News </a>
+        <a href="caloriecalculator.html"> Calorie Calculatator </a>
+        <a href="aboutus.html"> About Us </a>
+    </div>
+
+    <br> <br>
+
+    <div class="calcucontainer">
+        <h2> "How many calories do you need?" </h2>
+        <div>
+            <div class="calcubox">
+                <label> Hasil: </label>
+                <input type="number" readonly />
+            </div>
+
+            <div class="calcubox">
+                <label> Age: </label>
+                <input type="number">
+            </div>
+
+            <div class="calcubox">
+                <label> Gender: </label>
+                <label> <input type="radio" name="gender" value="male"> Male </label>
+                <label> <input type="radio" name="gender" value="female"> Female </label>
+                <button type="button" onclick="hasil"> <b> = </b> </button>
+            </div>
+
+            <div class="calcubox">
+                <label> Height: </label>
+                <input type="number">
+            </div>
+
+            <div class="calcubox">
+                <label> Weight: </label>
+                <input type="number">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
