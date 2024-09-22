@@ -9,18 +9,15 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1> Meal Plans </h1>
-    </header>
-    <div class="navbar">
-        <a href="home.html"> Home </a>
-        <a href="healthyrecipes.html"> Healthy Recipe </a>
-        <a href="specialdiets.html"> Special Diets </a>
-        <a href="mealplans.html"> Meal Plans </a>
-        <a href="news.html"> News </a>
-        <a href="caloriecalculator.html"> Calorie Calculator </a>
-        <a href="aboutus.html"> About Us </a>
-    </div>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
 
 </body>
 
