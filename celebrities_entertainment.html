@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrities & Entertainment</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<style>
+    div.news-content{
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class = "news-content">
+        <div class="large-text">
+            <h1> Celebrities & Entertainment</h1>
+        </div>
+        <div class="small-text">
+            <p> Discover how celebrities maintain a healthy lifestyle with Keto, Vegan, and Gluten-Free diets! 
+                From their favorite recipes to fitness secrets, we explore how famous stars stay in top shape. 
+                Dive into inspiring stories of celebrity health journeys that can motivate you to follow their path to a healthier life. 
+                Don’t miss exclusive tips from celebrity chefs serving up delicious, healthy meals for your everyday wellness!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>

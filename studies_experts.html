@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studies & Experts</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<style>
+    div.news-content{
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class = "news-content">
+        <div class="large-text">
+            <h1> Studies & Experts</h1>
+        </div>
+        <div class="small-text">
+            <p> Gain in-depth insights into the latest research and expert opinions in the fields of health and nutrition. 
+                From studies revealing the impact of diets on heart health to analyses on the role of gut microbiome in mental well-being, discover information that will help you make better choices for a healthy lifestyle. 
+                Stay updated on current developments and uncover the science that supports your health journey!
+            </p>
+        </div>
+    </div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>

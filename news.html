@@ -10,6 +10,55 @@
 
 <body>
     <div id="navbar-placeholder"></div>
+    <div class="image-container">
+        <img src="/image/news.jpg" alt="Image" />
+        <div class="centered-text">
+            <div class="large-text">News</div> 
+            <div class="small-text">"Stay Updated on the Latest in Food & Nutrition!" <br>
+                Explore cutting-edge studies & expert insights that shed light on the health impacts of various diets, from keto to vegan, and the science behind them. 
+                Get the latest updates on grocery & food news, including new product launches, sustainable food practices, and shopping trends.
+                Stay in the loop with the hottest celebrities & entertainment news as they share their diet secrets, wellness journeys, and favorite recipes. 
+                Plus, be informed about important recalls to ensure that the food on your table is safe and healthy.</div>
+        </div>
+    </div>
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <a href="studies_experts.html">
+                <img src="/image/studies&experts.jpg" alt="studies_experts"/>
+                <div class="recipe-info">
+                    <h2>Studies & Experts</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="recipe-card">
+            <a href="grocery_foodnews.html">
+                <img src="/image/Grocery & Food News.jpg" alt="grocery_foodnews" />
+                <div class="recipe-info">
+                    <h2>Grocery & Food News</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="recipe-card">
+            <a href="celebrities_entertainment.html">
+                <img src="/image/Celebrities & Entertainment.jpg" alt = "celebrities_entertainment"/>
+                <div class="recipe-info">
+                    <h2>Celebrities & Entertainment</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="recipe-card">
+            <a href = "recalls.html">
+                <img src="/image/Recalls.jpg" alt ="recalls"/>
+                <div class="recipe-info">
+                    <h2>Recalls</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
     <script>
         fetch('navbar.html')
             .then(response => response.text())
@@ -18,6 +67,7 @@
             })
             .catch(error => console.error('Error loading navbar:', error));
     </script>
+
 </body>
 
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery & Food News</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+
+<style>
+    div.news-content{
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div class = "news-content">
+        <div class="large-text">
+            <h1> Grocery & Food News </h1>
+        </div>
+        <div class="small-text">
+            <p> Discover the latest updates in the world of healthy food! We review new products that are perfect for Keto, Vegan, and Gluten-Free diets, 
+                as well as sustainable food practices that support a healthy lifestyle. 
+                From plant-based alternatives to the latest shopping trends that help you stay budget-friendly without sacrificing health. 
+                Get essential information to ensure you always have fresh and healthy options for your specific dietary needs!"
+            </p>
+        </div>
+    </div>
+
+    
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+    </script>
+</body>
+</html>
