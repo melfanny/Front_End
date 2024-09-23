@@ -50,24 +50,31 @@ h1 {
 .calcucontainer {
     border: 2px solid;
     padding: 15px;
+    /* biar ada jarak kiri kanan atas bawah */
     width: 35%;
+    /* mengatur lebar border kalkulator*/
     margin: 0 auto;
+    /* biar kalkulatornya berada di tengah*/
     border-radius: 20px;
-    background-color: #808000;
+    /* biar border melengkung sudutnya*/
+    background-color: #4d774e;
     text-align: center;
-    /* Meeletakkan kalkulator di tengah*/
+    /* biar tulisan judul kalkunya di tengah*/
 }
 
 .calcubox {
     display: flex;
-    /* Posisi konten di sebelah kiri */
+    /* biar box putihnya berada di sebelah kanan label */
     border: 1px solid black;
     padding: 15px;
     border-radius: 20px;
     width: 100%;
+    /* biar memenuhi border terluar */
     box-sizing: border-box;
+    /* biar border hijau mudanya gak overflow */
     margin: 10px 0;
-    background-color: #9acd32;
+    /* biar ada jarak antar border hijau (gak dempet) */
+    background-color: #f2f2f2;
 }
 
 label {
@@ -88,44 +95,41 @@ button {
 
 .dropdown {
     position: relative;
+    /* biar navbarnya yg punya dropdown jadi gak berantakan*/
     display: inline-block;
+    /* biar navbarnya tidak tersusun kebawah alias tersusun deret ke samping*/
 }
 
 .select {
     font-size: 20px;
     color: #4d774e;
     padding: 10px;
-    border-radius: 4px;
     cursor: pointer;
 }
 
 .dropdown-menu {
     position: absolute;
+    /* biar ketika ada dropdown, navbar yg lain tidak berantakan */
     display: none;
+    /* biar gada dropdown yang ditampilkan ketika kursor tidak diarahkan ke navbar*/
     text-align: left;
-    list-style: none;
+    /* biar isi di menu dropdown itu teksnya rata kiri semua */
     background-color: white;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 999;
+    /* memastikan dropdown menu berada di layer palong depan dan tidak tertimpa komponen lain*/
     border-radius: 4px;
 }
 
 .dropdown-item {
     display: block;
+    /* biar isi dropdown menunya tidak berantakan*/
     width: 100%;
     padding: 10px;
-    font-weight: 400;
-    text-align: inherit;
-    text-decoration: none;
     white-space: nowrap;
-    background-color: transparent;
-    border: 0;
+    /* biar isinya tidak overflow atau tidak melebihi batas border dropdownnya */
 }
 
-.dropdown-item a {
-    color: inherit;
-    text-decoration: none;
-}
 
 .dropdown:hover .dropdown-menu,
 .dropdown-menu:hover {
