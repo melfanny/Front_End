@@ -10,6 +10,57 @@
 
 <body>
     <div id="navbar-placeholder"></div>
+    <div class="image-container">
+        <img src="/image/vegetable.jpg" alt="Image" />
+        <div class="centered-text">
+            <div class="large-text">Healthy Recipes & Cooking Ideas</div>
+            <div class="small-text">Pick your category.</div>
+        </div>
+    </div>
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <img src="/image/breakfastcatjpg.jpg" />
+            <div class="recipe-info">
+                <h2>Breakfast</h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="/image/maincat.jpg" />
+            <div class="recipe-info">
+                <h2>Main Dishes</h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="/image/appetizerscat.jpg" />
+            <div class="recipe-info">
+                <h2>Appetizers</h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="/image/saladcat.jpg" />
+            <div class="recipe-info">
+                <h2>Salads</h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="/image/soupcat.jpg" />
+            <div class="recipe-info">
+                <h2>Soups</h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="/image/dessertcat.jpg" />
+            <div class="recipe-info">
+                <h2>Desserts</h2>
+            </div>
+        </div>
+    </div>
+
     <script>
         fetch('navbar.html')
             .then(response => response.text())
