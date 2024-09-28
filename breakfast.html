@@ -9,15 +9,7 @@
 </head>
 
 <body>
-    <div class="header-plans">
-        <img src="image/lossweight.jpg" />
-        <div class="centered-text">
-            <div class="large-text">
-                Breakfast
-            </div>
-        </div>
-    </div>
-
+    <div id="navbar-placeholder"></div>
     <div class="meals-menu-outer-container">
         <div class="meals-menu-inner-container">
             <div class="recipe-container">
@@ -94,6 +86,13 @@
 
 
     <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
         document.getElementById("ingredientsdropdownButton").addEventListener("click", function () {
             var dropdownContent = document.getElementById("ingredientsdropdownContent");
             if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
