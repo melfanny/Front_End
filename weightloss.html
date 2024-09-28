@@ -10,6 +10,7 @@
 
 
 <body>
+    <div id="navbar-placeholder"></div>
     <div class="meals-plans-header">
         <img src="image/lossweight.jpg" />
         <div class="centered-text">
@@ -621,6 +622,13 @@
     </div>
 
     <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
         document.querySelectorAll(".dropdownButton").forEach(function (button) {
             button.addEventListener("click", function () {
                 var dropdownContent = this.nextElementSibling;

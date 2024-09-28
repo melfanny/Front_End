@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="/stylesheet.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Healthy Recipes</title>
 </head>
@@ -12,7 +12,7 @@
 <body>
     <div id="navbar-placeholder"></div>
     <div class="image-container">
-        <img src="/image/healthyrecipes/maindishes.jpg" alt="Image" />
+        <img src="/image/healthyrecipes/main/maindishes.jpg" alt="Image" />
         <div class="centered-text">
             <div class="large-text">Main Dishes</div>
             <div class="small-text">Enjoy these amazing recipes!</div>
@@ -24,7 +24,7 @@
     </div>
 
     <div class="recipe-grid">
-        <a href="#">
+        <a href="/healthyrecipes/maindishes/miso_salmon_bowls.html">
             <div class="recipe-card" data-title="Miso Salmon Bowls">
                 <img src="/image/healthyrecipes/main/misosalmon.jpg" alt="Miso Salmon Bowls" />
                 <div class="recipe-info">
@@ -87,7 +87,7 @@
     </div>
 
     <script>
-        fetch('navbar.html')
+        fetch('/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
