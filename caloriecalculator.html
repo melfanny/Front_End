@@ -15,36 +15,35 @@
     <br> <br>
 
     <div class="calcucontainer">
-        <h2> "How many calories do you need?" </h2>
-        <div>
-            <div class="calcubox">
-                <label> Hasil: </label>
-                <input type="number" readonly />
-            </div>
+        <h2>"How many calories do you need?"</h2>
 
-            <div class="calcubox">
-                <label> Age: </label>
-                <input type="number">
-            </div>
+        <div class="calcubox">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+        </div>
+        <div class="calcubox">
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+        </div>
+        <div class="calcubox">
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" placeholder="Enter your height in cm">
+        </div>
+        <div class="calcubox">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" placeholder="Enter your weight in kg">
+        </div>
 
-            <div class="calcubox">
-                <label> Gender: </label>
-                <label> <input type="radio" name="gender" value="male"> Male </label>
-                <label> <input type="radio" name="gender" value="female"> Female </label>
-                <button type="button" onclick="hasil"> <b> = </b> </button>
-            </div>
+        <button type="button" onclick="CalculatorCalories()">Result:</button>
 
-            <div class="calcubox">
-                <label> Height: </label>
-                <input type="number">
-            </div>
-
-            <div class="calcubox">
-                <label> Weight: </label>
-                <input type="number">
-            </div>
+        <div class="calcubox">
+            <label for="result">Calories Needed:</label>
+            <input type="text" id="result" name="result" readonly>
         </div>
     </div>
+
+
 
     <script>
         fetch('navbar.html')
@@ -53,6 +52,32 @@
                 document.getElementById('navbar-placeholder').innerHTML = data;
             })
             .catch(error => console.error('Error loading navbar:', error));
+
+        function CalculatorCalories() {
+
+            const age = document.getElementById('age').value;
+            const gender = document.querySelector('input[name="gender"]:checked');
+            const height = document.getElementById('height').value;
+            const weight = document.getElementById('weight').value;
+
+
+            if (!age || !gender || !height || !weight) {
+                alert("Please fill in all fields");
+                return;
+            }
+
+            const selectedGender = gender.value;
+            let bmr;
+
+            if (selectedGender === 'male') {
+                bmr = 10 * weight + 6.25 * height - 5 * age + 5;
+            } else if (selectedGender === 'female') {
+                bmr = 10 * weight + 6.25 * height - 5 * age - 161;
+            }
+
+            document.getElementById('result').value = Math.round(bmr) + ' kcal/day';
+        }
+
     </script>
 
 </body>
