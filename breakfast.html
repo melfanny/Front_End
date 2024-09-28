@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Breakfast Menu</title>
+</head>
+
+<body>
+    <div class="header-plans">
+        <img src="image/lossweight.jpg" />
+        <div class="centered-text">
+            <div class="large-text">
+                Breakfast
+            </div>
+        </div>
+    </div>
+
+    <div class="meals-menu-outer-container">
+        <div class="meals-menu-inner-container">
+            <div class="recipe-container">
+                <img src="image/greeksalad.jpg" alt="Salad Image">
+            </div>
+            <div class="content">
+                <h1>Greek Salad</h1>
+                <p>This classic Greek salad is made with juicy tomatoes, cucumbers, onions, feta cheese, and Kalamata
+                    olives. It is seasoned with salt, pepper, olive oil, and oregano, providing a refreshing taste
+                    perfect for breakfast or a light meal.</p>
+
+
+                <br>
+                <h2 id="nutritiondropdownButton"> Nutrition Facts: </h2>
+                <div id="nutritiondropdownContent" class="dropdown-content">
+                    <ul>
+                        <li> Calories: 200-250 kcal </li>
+                        <li> Total Fat: 18 grams </li>
+                        <li> Cholesterol: 25 mg (from feta cheese) </li>
+                        <li> Sodium: 600-800 mg (mainly from feta cheese and olives) </li>
+                        <li> Total Carbohydrates: 10-12 grams </li>
+                        <li> Fiber: 3-4 grams</li>
+                        <li> Sugar: 5-6 grams (from vegetables) </li>
+                        <li> Protein: 4-6 grams (mostly from feta cheese)</li>
+                    </ul>
+                </div>
+
+                <br>
+                <h2 id="ingredientsdropdownButton">Ingredients:</h2>
+                <div id="ingredientsdropdownContent" class="dropdown-content">
+                    <ul>
+                        <li> Tomatoes </li>
+                        <li> Green bell pepper </li>
+                        <li> Red onion </li>
+                        <li> Cucumbers </li>
+                        <li> Kalamata olives </li>
+                        <li> Feta Cheese </li>
+                    </ul>
+                </div>
+
+                <br>
+                <h2 id="stepdropdownButton"> Step by Step:</h2>
+                <div id="stepdropdownContent" class="dropdown-content">
+                    <ol type="1">
+                        <li> Prepare the vegetables: Wash the tomatoes, green bell pepper, cucumber, and red onion
+                            thoroughly. Cut everything to the desired size (usually diced or thinly sliced). </li>
+                        <li> Mix the vegetables: Add the chopped tomatoes, green bell pepper, cucumber, red onion, and
+                            olives into a large bowl. </li>
+                        <li> Prepare the dressing: In a small bowl, mix olive oil, red wine vinegar, oregano, salt, and
+                            pepper. Stir until well combined. You can also use store-bought salad dressing from the
+                            supermarket. </li>
+                        <li> Combine all ingredients: Pour the dressing over the salad, and gently toss everything
+                            together until all the ingredients are evenly coated. </li>
+                        <li> Add feta cheese: Place the crumbled or cubed feta cheese on top of the salad, without
+                            mixing it in, to keep it from breaking apart too much. </li>
+                        <li> Serve: The Greek salad is ready to be served as an appetizer or a side dish. Enjoy! </li>
+                    </ol>
+                </div>
+
+                <br>
+                <h2 id="videodropdownButton"> Video:</h2>
+                <div id="videodropdownContent" class="dropdown-content">
+                    <video width="320" height="240" controls>
+                        <source src="video/greeksaladvideo.mp4"> Your browser does not support to view the videos
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        document.getElementById("ingredientsdropdownButton").addEventListener("click", function () {
+            var dropdownContent = document.getElementById("ingredientsdropdownContent");
+            if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        });
+
+        document.getElementById("stepdropdownButton").addEventListener("click", function () {
+            var stepsContent = document.getElementById("stepdropdownContent");
+            if (stepsContent.style.display === "none" || stepsContent.style.display === "") {
+                stepsContent.style.display = "block";
+            } else {
+                stepsContent.style.display = "none";
+            }
+        });
+
+        document.getElementById("videodropdownButton").addEventListener("click", function () {
+            var stepsContent = document.getElementById("videodropdownContent");
+            if (stepsContent.style.display === "none" || stepsContent.style.display === "") {
+                stepsContent.style.display = "block";
+            } else {
+                stepsContent.style.display = "none";
+            }
+        });
+
+        document.getElementById("nutritiondropdownButton").addEventListener("click", function () {
+            var stepsContent = document.getElementById("nutritiondropdownContent");
+            if (stepsContent.style.display === "none" || stepsContent.style.display === "") {
+                stepsContent.style.display = "block";
+            } else {
+                stepsContent.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+
+
+</html>

@@ -10,6 +10,64 @@
 
 <body>
     <div id="navbar-placeholder"></div>
+    <div class="image-container">
+        <img src="image/mealplansheader.jpg" />
+        <div class="centered-text">
+            <div class="large-text"> Meal of The Day </div>
+            <div class="small-text"> Plan your meals! </div>
+        </div>
+    </div>
+
+    <div class="recipe-grid">
+        <div class="recipe-card">
+            <img src="image/lossweight.jpg" />
+            <div class="recipe-info">
+                <h2> Weight Loss</h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="image/proteinhigh.jpg" />
+            <div class="recipe-info">
+                <h2> High Protein </h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="image/lowcarbo.jpg" />
+            <div class="recipe-info">
+                <h2> Low Carbo </h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="image/lowcholestrol.jpg" />
+            <div class="recipe-info">
+                <h2>
+                    Low Cholestrol
+                </h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="image/lowss.jpeg" />
+            <div class="recipe-info">
+                <h2>
+                    Low Salt & Sugar
+                </h2>
+            </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="image/antinflammatory.jpg" />
+            <div class="recipe-info">
+                <h2>
+                    Anti Inflammatory
+                </h2>
+            </div>
+        </div>
+
+    </div>
     <script>
         fetch('navbar.html')
             .then(response => response.text())
@@ -18,6 +76,8 @@
             })
             .catch(error => console.error('Error loading navbar:', error));
     </script>
+
+
 
 </body>
 
