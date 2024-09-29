@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheet.css" />
+    <title>Curried Zucchini Soup</title>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="recipe-outer-container">
+        <div class="recipe-inner-container">
+            <div class="recipe-item-container">
+                <img src="/image/healthyrecipes/soups/butternutsoup.jpg" alt="Curried Zucchini Soup">
+            </div>
+            <div class="r-content">
+                <h1>Curried Zucchini Soup</h1>
+                <p>Curried Zucchini Soup made with fresh ginger, jalapeño and mint. Quick, easy, and deeply satisfying,
+                    this
+                    vegan-adaptable soup can be served hot or chilled. Vegan, Gluten-free.
+                </p>
+
+                <br>
+                <h2 id="Ingredients">Ingredients ⇩</h2>
+                <div class="recipe-content">
+                    <ul>
+                        <li>2 tablespoons coconut oil</li>
+                        <li>1 medium onion, coarsely chopped</li>
+                        <li>2 cloves garlic, coarsely chopped</li>
+                        <li>1 tablespoon ginger, peeled and grated or chopped</li>
+                        <li>1/2 to 1 jalapeño, seeded and chopped</li>
+                        <li>1 1/2 teaspoons sea salt</li>
+                        <li>2 teaspoons yellow curry powder</li>
+                        <li>2 pounds zucchini or yellow squash, about 4 medium, cut into chunks</li>
+                        <li>4 cups chicken or vegetable stock</li>
+                        <li>1/4 cup cilantro, leaves and stems roughly chopped</li>
+                        <li>1/4 cup mint leaves, roughly chopped</li>
+                        <li>Optional garnish: cilantro, mint, yogurt or coconut milk, Urfa Biber (chili flakes)</li>
+                    </ul>
+
+
+                </div>
+
+                <br>
+                <h2 id="instructions"> Instructions ⇩</h2>
+                <div class="recipe-content">
+                    <ol>
+                        <li>In a heavy-bottomed pot or Dutch oven, sauté onion, garlic, ginger, and jalapeño in coconut
+                            oil over medium heat
+                            for about 5 minutes until tender and fragrant.</li>
+                        <li>Add the salt, zucchini, and curry powder. Sauté for a few minutes more.</li>
+                        <li>Add 2 cups of broth. Bring to a simmer, cover, and cook until the squash is tender, about
+                            5-10 minutes.</li>
+                        <li>Add two cups of cold broth to a blender along with all the simmered ingredients. Be careful
+                            with hot liquids;
+                            cover firmly with a kitchen towel to prevent splattering.</li>
+                        <li>Blend with the lid vented until smooth. Add fresh mint and cilantro, and blend until
+                            incorporated. You can blend
+                            to your desired smoothness, keeping some flecks of herbs if preferred.</li>
+                        <li>Reheat the soup before serving.</li>
+                        <li>Garnish with cilantro, mint, yogurt, coconut milk, or Urfa Biber, if desired.</li>
+                    </ol>
+                </div>
+                <br>
+                <h2 id="nutritions"> Nutrition Facts ⇩ </h2>
+                <div class="recipe-content">
+                    <ul>
+                        <li><strong>Serving Size:</strong> 1 ½ cups</li>
+                        <li><strong>Calories:</strong> 159</li>
+                        <li><strong>Sugar:</strong> 7.7 g</li>
+                        <li><strong>Sodium:</strong> 674.4 mg</li>
+                        <li><strong>Fat:</strong> 9.1 g</li>
+                        <li><strong>Saturated Fat:</strong> 6.3 g</li>
+                        <li><strong>Carbohydrates:</strong> 14.6 g</li>
+                        <li><strong>Fiber:</strong> 3.7 g</li>
+                        <li><strong>Protein:</strong> 8.2 g</li>
+                        <li><strong>Cholesterol:</strong> 0 mg</li>
+                    </ul>
+                </div>
+
+                <br>
+                <h2 id="video"> Video ⇩</h2>
+                <div class="recipe-content">
+                    <video width="320" height="240" controls>
+                        <source src="#"> Your browser does not support to view the videos
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        fetch('/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading navbar:', error));
+
+
+    </script>
+
+</body>
+
+
+</html>
