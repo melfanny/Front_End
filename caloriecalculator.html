@@ -8,7 +8,7 @@
     <title> Calorie Calculator </title>
 </head>
 
-<body>
+<body class="body">
 
     <div id="navbar-placeholder"></div>
 
@@ -18,8 +18,13 @@
         <h2>"How many calories do you need?"</h2>
 
         <div class="calcubox">
+            <label for="result">Calories:</label>
+            <input type="text" id="result" name="result" placeholder="Your calories need show here" readonly>
+        </div>
+
+        <div class="calcubox">
             <label for="age">Age:</label>
-            <input type="number" id="age" name="age" placeholder="Enter your age">
+            <input type="number" id="age" name="age" placeholder="Enter here">
         </div>
         <div class="calcubox">
             <label for="gender">Gender:</label>
@@ -28,19 +33,16 @@
         </div>
         <div class="calcubox">
             <label for="height">Height (cm):</label>
-            <input type="number" id="height" name="height" placeholder="Enter your height in cm">
+            <input type="number" id="height" name="height" placeholder="Enter here">
         </div>
         <div class="calcubox">
             <label for="weight">Weight (kg):</label>
-            <input type="number" id="weight" name="weight" placeholder="Enter your weight in kg">
+            <input type="number" id="weight" name="weight" placeholder="Enter here ">
         </div>
 
         <button type="button" onclick="CalculatorCalories()">Result:</button>
 
-        <div class="calcubox">
-            <label for="result">Calories Needed:</label>
-            <input type="text" id="result" name="result" readonly>
-        </div>
+
     </div>
 
 

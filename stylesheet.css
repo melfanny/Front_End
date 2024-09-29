@@ -12,12 +12,6 @@ body {
     background-color: #f2f2f2;
 }
 
-.banner {
-    background-color: #4d774e;
-    height: 20px;
-    width: 100%;
-}
-
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 50px;
@@ -53,13 +47,13 @@ h1 {
     padding: 20px;
     width: 40%;
     margin: 50px auto;
-    border-radius: 20px;
-    background-color: #e8f5e9;
+    border-radius: 30px;
+    background-color: #f2f2f2;
     text-align: center;
 }
 
 h2 {
-    color: #2e7d32;
+    color: #1b5e20;
     margin-bottom: 20px;
     font-size: 24px;
 }
@@ -67,17 +61,17 @@ h2 {
 .calcubox {
     display: flex;
     justify-content: space-between;
-    border: 1px solid #1b5e20;
+    border: 2px solid #f2f2f2;
     padding: 15px;
-    border-radius: 20px;
+    border-radius: 30px;
     width: 100%;
     box-sizing: border-box;
     margin: 10px 0;
-    background-color: #f1f8e9;
+    background-color: #1b5e20;
 }
 
 label {
-    color: #2e7d32;
+    color: white;
     padding: 10px;
     font-weight: bold;
 }
@@ -86,12 +80,11 @@ label {
 button {
     width: 60%;
     padding: 20px;
-    border: 1px solid #2e7d32;
-    border-radius: 10px;
+    border: 1px solid #1b5e20;
+    border-radius: 40px;
     box-sizing: border-box;
     font-weight: bold;
-    background-color: #ffffff;
-    transition: all 0.3s ease;
+    background-color: #f2f2f2;
     font-size: 16px;
 }
 
@@ -101,14 +94,9 @@ button:hover {
     box-shadow: 0 0 5px rgba(46, 125, 50, 0.5);
 }
 
-
-#result {
-    border-radius: 20px;
-}
-
 button {
     background-color: #1b5e20;
-    color: white;
+    color: #f2f2f2;
     cursor: pointer;
 }
 
@@ -153,7 +141,6 @@ button:hover {
     white-space: nowrap;
     /* biar isinya tidak overflow atau tidak melebihi batas border dropdownnya */
 }
-
 
 .dropdown:hover .dropdown-menu,
 .dropdown-menu:hover {
@@ -215,18 +202,18 @@ button:hover {
     margin: 20px 0;
 }
 
-.social-log-reg a{
+.social-log-reg a {
     text-decoration: none;
 }
 
 .log-reg-image {
-    width: 100%;               
-    max-height: 250px;           
-    object-fit: cover;           
-     display: block; 
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
 }
 
-.log-reg-color{
+.log-reg-color {
     margin: 10px;
     font-size: 20px;
     color: #4d774e;
@@ -235,23 +222,23 @@ button:hover {
 @media (min-width: 1024px) {
     .log-reg-section {
         display: flex;
-        height: 100vh;   
+        height: 100vh;
     }
 
     .log-reg-image {
-        width: 150%;                
-        max-height: 90vh;  
-        object-fit: cover;         
+        width: 150%;
+        max-height: 90vh;
+        object-fit: cover;
     }
 
     .login-container {
-        width: 50%;                
+        width: 50%;
         margin-left: 200px;
-        margin-top: 60px;         
+        margin-top: 60px;
     }
 
-    .register-container{
-        width: 50%;               
+    .register-container {
+        width: 50%;
         margin-left: 350px;
         margin-top: 60px;
     }
@@ -276,7 +263,6 @@ button:hover {
     width: 350px;
     text-align: center;
 }
-
 
 .image-container {
     margin-top: 50px;
@@ -369,22 +355,6 @@ button:hover {
     }
 }
 
-.header-plans {
-    position: relative;
-    width: 100%;
-    display: inline-block;
-    height: auto;
-}
-
-.header-plans img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-    filter: brightness(50%);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
 .meals-container {
     display: flex;
     gap: 20px;
@@ -431,88 +401,67 @@ button:hover {
     cursor: pointer;
 }
 
-
-.meals-plans-header {
-    position: relative;
-    width: 95%;
-    display: inline-block;
-    height: auto;
-    padding: 20px;
-}
-
-.meals-plans-header img {
-    width: 102%;
-    height: 100px;
-    object-fit: cover;
-    filter: brightness(50%);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
 .meals-menu-outer-container {
-    width: 95%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #4d774e;
+    width: 50%;
+    background-image: url("image/bgplan.jpg");
     border-radius: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
+    min-width: 80%;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 50px;
+    margin-top: 20px;
 }
 
-.recipe-item-container {
-    width: 95%;
-    padding: 20px;
-    background-color: #82d783;
-
+.meal-days-slider {
+    display: flex;
+    overflow: hidden;
+    /* harus ada supaya bisa slide*/
+    width: 100%;
+    /* supaya bisa full screen lebarnya*/
+    user-select: none;
+    /*supaya ketika di slide itu, konten lain tidak ke block*/
 }
 
 .meals-menu-inner-container {
-    padding: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* Align kontainer secara vertikal di atas */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-
-.recipe-container {
-    width: 40%;
-    max-width: 60%;
-    /* Kontainer gambar sebesar 45% dari lebar total */
-}
-
-.recipe-container img {
+.recipe-item-container {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    padding: 20px;
+    background-color: #1b5e20;
+    text-align: center;
 }
-
 
 .content {
-    width: 80%;
-    /* Kontainer konten sebesar 50% dari lebar total */
-    margin-left: 20px;
+    width: 60%;
     color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-
 .content h1 {
     margin-bottom: 10px;
 }
 
 .content p {
-    text-align: justify;
+    text-align: center;
     font-size: 16px;
     line-height: 1.6;
 }
 
 .content h2 {
-    text-align: justify;
+    text-align: center;
     font-size: 16px;
     line-height: 1.6;
     cursor: pointer;
+    color: #f2f2f2;
 }
 
 .content h2:hover {
@@ -522,14 +471,11 @@ button:hover {
 
 .dropdown-content {
     display: none;
-    background-color: #82d783;
+    background-color: #1b5e20;
     color: #000;
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 95%;
+    width: 100%;
 }
-
-
 
 .dropdown-content ul,
 ol {
@@ -621,4 +567,9 @@ p {
         padding-right: 50px;
         width: 100%;
     }
+}
+
+/*ini buat background calculator*/
+.body {
+    background-image: url("image/vegetableheader.jpg");
 }
