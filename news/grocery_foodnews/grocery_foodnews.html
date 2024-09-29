@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celebrities & Entertainment</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Grocery & Food News</title>
+    <link rel="stylesheet" href="/stylesheet.css" />
 </head>
 
 <style>
@@ -17,22 +17,28 @@
 </style>
 <body>
     <div id="navbar-placeholder"></div>
+    
+    <div class="recipe-card-artikel">
+        <h2>News</h2>
+    </div>
 
     <div class = "news-content">
         <div class="large-text">
-            <h1> Celebrities & Entertainment</h1>
+            <h1> Grocery & Food News </h1>
         </div>
         <div class="small-text">
-            <p> Discover how celebrities maintain a healthy lifestyle with Keto, Vegan, and Gluten-Free diets! 
-                From their favorite recipes to fitness secrets, we explore how famous stars stay in top shape. 
-                Dive into inspiring stories of celebrity health journeys that can motivate you to follow their path to a healthier life. 
-                Don’t miss exclusive tips from celebrity chefs serving up delicious, healthy meals for your everyday wellness!
+            <p> Discover the latest updates in the world of healthy food! We review new products that are perfect for Keto, Vegan, and Gluten-Free diets, 
+                as well as sustainable food practices that support a healthy lifestyle. 
+                From plant-based alternatives to the latest shopping trends that help you stay budget-friendly without sacrificing health. 
+                Get essential information to ensure you always have fresh and healthy options for your specific dietary needs!"
             </p>
         </div>
     </div>
 
+    
+
     <script>
-        fetch('navbar.html')
+        fetch('/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studies & Experts</title>
-    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Recalls</title>
+    <link rel="stylesheet" href="/stylesheet.css" />
 </head>
 
 <style>
@@ -17,21 +17,25 @@
 </style>
 <body>
     <div id="navbar-placeholder"></div>
+    
+    <div class="recipe-card-artikel">
+        <h2>News</h2>
+    </div>
 
     <div class = "news-content">
         <div class="large-text">
-            <h1> Studies & Experts</h1>
+            <h1> Recalls </h1>
         </div>
         <div class="small-text">
-            <p> Gain in-depth insights into the latest research and expert opinions in the fields of health and nutrition. 
-                From studies revealing the impact of diets on heart health to analyses on the role of gut microbiome in mental well-being, discover information that will help you make better choices for a healthy lifestyle. 
-                Stay updated on current developments and uncover the science that supports your health journey!
+            <p> "Receive important alerts about product safety that may impact your diet! We provide the latest updates on product recalls that could affect Keto, Vegan, and Gluten-Free diets. 
+                Stay informed about products that might compromise your health, so you can continue enjoying safe meals aligned with your healthy lifestyle. 
+                Ensure your food choices are always safe with our latest recall reminders!
             </p>
         </div>
     </div>
 
     <script>
-        fetch('navbar.html')
+        fetch('/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
