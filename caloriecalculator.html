@@ -40,7 +40,10 @@
             <input type="number" id="weight" name="weight" placeholder="Enter here ">
         </div>
 
-        <button type="button" onclick="CalculatorCalories()">Result:</button>
+
+        <button type="button" onclick="CalculatorCalories()">Result</button>
+        <button type="button" onclick="CalculatorCalories()">Reset</button>
+
 
 
     </div>
@@ -48,7 +51,7 @@
 
 
     <script>
-        fetch('navbar.html')
+        fetch('/navbar/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;

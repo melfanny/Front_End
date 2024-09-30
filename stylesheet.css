@@ -320,7 +320,7 @@ button:hover {
 
 .meals-menu-outer-container {
     width: 50%;
-    background-image: url("image/bgplan.jpg");
+    background-image: url("image/mealplans/bgplan.jpg");
     border-radius: 10px;
     margin-bottom: 0px;
     min-width: 80%;
@@ -348,9 +348,9 @@ button:hover {
     flex-direction: column;
 }
 
-.recipe-item-container {
+.daily-item-container {
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #1b5e20;
     text-align: center;
 }
 
@@ -505,7 +505,7 @@ p {
 
 /*ini buat background calculator*/
 .body {
-    background-image: url("image/vegetableheader.jpg");
+    background-image: url("image/mealplans/vegetableheader.jpg");
 }
 
 .r-content {
@@ -539,28 +539,33 @@ p {
     font-weight: bold;
 }
 
-div.news-content{
+div.news-content {
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
 }
-div.artikel-container{
+
+div.artikel-container {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
 }
-div.news-content{
+
+div.news-content {
     font-family: 'Times New Roman', Times, serif;
 }
-div.artikel-title h1{
+
+div.artikel-title h1 {
     font-family: 'Times New Roman', Times, serif;
 }
-div.artikel-container h2{
+
+div.artikel-container h2 {
     font-family: 'Times New Roman', Times, serif;
 }
-div.artikel-container p{
+
+div.artikel-container p {
     font-family: 'Times New Roman', Times, serif;
 }

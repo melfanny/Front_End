@@ -11,7 +11,7 @@
 <body>
     <div id="navbar-placeholder"></div>
     <div class="image-container">
-        <img src="image/mealplans.jpg" />
+        <img src="image/mealplans/mealplans.jpg" />
         <div class="centered-text">
             <div class="large-text"> Meal of The Day </div>
             <div class="small-text"> Plan your meals! </div>
@@ -20,7 +20,7 @@
 
     <div class="recipe-grid">
         <div class="recipe-card">
-            <img src="image/diet.jpg" />
+            <img src="image/mealplans/diet.jpg" />
             <div class="recipe-info">
                 <a href="mealplans/weightloss.html">
                     <h2> Weight Loss</h2>
@@ -30,7 +30,7 @@
         </div>
 
         <div class="recipe-card">
-            <img src="image/proteinhigh.jpg" />
+            <img src="image/mealplans/proteinhigh.jpg" />
             <div class="recipe-info">
                 <a href="mealplans/highprotein.html">
                     <h2> High Protein </h2>
@@ -39,7 +39,7 @@
         </div>
 
         <div class="recipe-card">
-            <img src="image/lowcarbo.jpg" />
+            <img src="image/mealplans/lowcarbo.jpg" />
             <div class="recipe-info">
                 <a href="mealplans/lowcarbo.html">
                     <h2> Low Carbo </h2>
@@ -48,7 +48,7 @@
         </div>
 
         <div class="recipe-card">
-            <img src="image/lowcholestrol.jpg" />
+            <img src="image/mealplans/lowcholestrol.jpg" />
             <div class="recipe-info">
                 <a href="mealplans/lowcholestrol.html">
                     <h2>
@@ -59,7 +59,7 @@
         </div>
 
         <div class="recipe-card">
-            <img src="image/sugarsalt.png" />
+            <img src="image/mealplans/sugarsalt.png" />
             <div class="recipe-info">
                 <a href="mealplans/lowss.html">
                     <h2>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="recipe-card">
-            <img src="image/antinflammatory.jpg" />
+            <img src="image/mealplans/antinflammatory.jpg" />
             <div class="recipe-info">
                 <a href="mealplans/antiinflammatory.html">
                     <h2>
@@ -82,7 +82,7 @@
 
     </div>
     <script>
-        fetch('navbar.html')
+        fetch('/navbar/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
