@@ -6,18 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="stylesheet.css" />
+<style>
+    .header-home {
+        text-align: right;
+        margin-right: 300px;
+        font-size: 24px;
+    }
+
+    .header-home a {
+        color: #4d774e;
+        text-decoration: none;
+    }
+
+    .header-home a:hover {
+        text-decoration: underline;
+    }
+
+</style>
+
 </head>
 
 <body>
     <div id="navbar-placeholder"></div>
+
+    <div class="header-home">
+        <a href="news.html">Latest Healthy News</a>
+    </div>
+
+        <iframe src="home/homenews.html"></iframe>
+
     <script>
-        fetch('navbar.html')
+        fetch('/navbar/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
             })
             .catch(error => console.error('Error loading navbar:', error));
     </script>
+
 </body>
 
 </html>

@@ -569,3 +569,9 @@ div.artikel-container h2 {
 div.artikel-container p {
     font-family: 'Times New Roman', Times, serif;
 }
+
+iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
