@@ -40,12 +40,10 @@
             <input type="number" id="weight" name="weight" placeholder="Enter here ">
         </div>
 
-
-        <button type="button" onclick="CalculatorCalories()">Result</button>
-        <button type="button" onclick="CalculatorCalories()">Reset</button>
-
-
-
+        <div class="reset">
+            <button type="button" onclick="CalculatorCalories()">Result</button>
+            <button type="button" onclick="ResetCalories()">Reset</button>
+        </div>
     </div>
 
 
@@ -66,8 +64,23 @@
             const weight = document.getElementById('weight').value;
 
 
-            if (!age || !gender || !height || !weight) {
-                alert("Please fill in all fields");
+            if (!age) {
+                alert("Please enter your age");
+                return;
+            }
+
+            if (!gender) {
+                alert("Please select your gender");
+                return;
+            }
+
+            if (!height) {
+                alert("Please enter your height");
+                return;
+            }
+
+            if (!weight) {
+                alert("Please enter your weight");
                 return;
             }
 
@@ -83,8 +96,14 @@
             document.getElementById('result').value = Math.round(bmr) + ' kcal/day';
         }
 
+        function ResetCalories() {
+            document.getElementById('age').value = '';
+            document.getElementById('weight').value = '';
+            document.getElementById('height').value = '';
+            document.querySelectorAll('input[name]="gender"').forEach(input => input.checked = false);
+            document.getElementById('result').value = '';
+        }
     </script>
-
 </body>
 
 </html>
