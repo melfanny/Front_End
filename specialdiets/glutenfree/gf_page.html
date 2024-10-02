@@ -25,8 +25,8 @@
 
     <div class="recipe-grid">
         <a href="/news/studies_experts/Artikel_studies1.html">
-            <div class="recipe-card" data-title="Crudo">
-                <img src="/image/news/studies/studies&experts.jpg" alt="Crudo" />
+            <div class="recipe-card" data-title="Gluten-Free Diet: Necessary for Everyone?">
+                <img src="/image/news/studies/studies&experts.jpg" alt="Gluten-Free Diet: Necessary for Everyone?" />
                 <div class="recipe-info">
                     <p class="time">Studies & Experts</p>
                     <h2>Gluten-Free Diet: Necessary for Everyone?</h2>
@@ -53,10 +53,40 @@
                 </div>
             </div>
         </a>
+
+        <a href="/healthyrecipes/breakfast/chia_pudding.html">
+            <div class="recipe-card" data-title="Chia Pudding">
+                <img src="/image/healthyrecipes/breakfast/chiapudding.jpg" alt="Chia Pudding" />
+                <div class="recipe-info">
+                    <p class="time">10 minutes</p>
+                    <h2>Chia Pudding</h2>
+                </div>
+            </div>
+        </a>
+
+        <a href="/healthyrecipes/maindishes/khao_soi.html">
+            <div class="recipe-card" data-title="Khao Soi (Thai Coconut Noodle Soup)">
+                <img src="/image/healthyrecipes/main/khaosoi.jpg" alt="Khao Soi (Thai Coconut Noodle Soup)" />
+                <div class="recipe-info">
+                    <p class="time">30 minutes</p>
+                    <h2>Khao Soi (Thai Coconut Noodle Soup)</h2>
+                </div>
+            </div>
+        </a>
+
+        <a href="/healthyrecipes/soups/curried_zucchini_soup.html">
+            <div class="recipe-card" data-title="Curried Zucchini Soup">
+                <img src="/image/healthyrecipes/soups/zucchinisoup.jpg" alt="Curried Zucchini Soup" />
+                <div class="recipe-info">
+                    <p class="time">30 minutes</p>
+                    <h2>Curried Zucchini Soup</h2>
+                </div>
+            </div>
+        </a>
     </div>
 
     <script>
-        fetch('/navbar.html')
+        fetch('/navbar/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;

@@ -13,8 +13,17 @@
     <div class="recipe-outer-container">
         <div class="recipe-inner-container">
             <div class="recipe-item-container">
-                <img src="/image/healthyrecipes/main/khaosoi.jpg" alt="Khao Soi">
+                <img id="recipe-image" src="/image/healthyrecipes/main/khaosoi.jpg" alt="Recipe Image">
+                <div class="image-controls">
+                    <button class="control-btn" onclick="prevImage()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="control-btn" onclick="nextImage()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
             </div>
+
             <div class="r-content">
                 <h1>Khao Soi</h1>
                 <p>This Khao Soi recipe is rich, fragrant and delicious! It’s a Coconut Curry Noodle Soup that hails
@@ -134,7 +143,29 @@
             })
             .catch(error => console.error('Error loading navbar:', error));
 
+        const images = [
+            "/image/healthyrecipes/main/khaosoi.jpg",
+            "/image/healthyrecipes/main/khao_soi2.jpg",
+            "/image/healthyrecipes/main/khao_soi3.png"
+        ];
+        let currentImageIndex = 0;
 
+        function showImage(index) {
+            const imgElement = document.getElementById('recipe-image');
+            imgElement.src = images[index];
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+            showImage(currentImageIndex);
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+            showImage(currentImageIndex);
+        }
+
+        showImage(currentImageIndex);
     </script>
 
 </body>

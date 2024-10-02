@@ -361,6 +361,15 @@ button:hover {
     text-align: center;
 }
 
+.recipe-item-container {
+    width: auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    padding: 10px;
+}
+
 .recipe-item-container img {
     max-width: 100%;
     height: auto;
@@ -443,7 +452,9 @@ ol {
 
 .recipe-item-container {
     width: 100%;
+    height: fit-content;
     padding: 20px;
+    background-color: transparent;
 }
 
 .recipe-inner-container {
@@ -471,6 +482,37 @@ p {
 
 .recipe-card-artikel {
     text-align: center;
+}
+
+.image-controls {
+    position: absolute;
+    top: 50%;
+    width: calc(100% - 50px);
+    /* Adjust width to provide space for buttons */
+    display: flex;
+    justify-content: space-between;
+    /* Space between buttons */
+    transform: translateY(-50%);
+    padding: 0 10px;
+    /* Add padding to keep buttons from edge */
+}
+
+.control-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.control-btn:hover {
+    background: transparent
 }
 
 @media (max-width: 980px) {
@@ -504,12 +546,33 @@ p {
 
     .recipe-item-container {
         max-width: 60%;
+        position: static;
     }
 
     .recipe-item-container img {
         max-width: 100%;
         height: auto;
     }
+
+    .image-controls {
+        width: 480px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 250px;
+    }
+
+    .control-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    #recipe-image {
+        max-width: 100%;
+        height: auto;
+    }
+}
 }
 
 /*ini buat background calculator*/

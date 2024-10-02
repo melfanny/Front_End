@@ -24,6 +24,16 @@
     </div>
 
     <div class="recipe-grid">
+        <a href="/news/studies_experts/Artikel_studies1.html">
+            <div class="recipe-card" data-title="Keto Diet: What Science Say">
+                <img src="/image/news/recalls/Recalls.jpg" alt="Keto Diet: What Science Say" />
+                <div class="recipe-info">
+                    <p class="time">Studies & Experts</p>
+                    <h2>Keto Diet: What Science Says</h2>
+                </div>
+            </div>
+        </a>
+
         <a href="/healthyrecipes/appetizers/crudo.html">
             <div class="recipe-card" data-title="Crudo">
                 <img src="/image/healthyrecipes/appetizers/crudo.jpg" alt="Crudo" />
@@ -34,29 +44,19 @@
             </div>
         </a>
 
-        <a href="/healthyrecipes/appetizers/teriyaki_lettuce_wraps.html">
-            <div class="recipe-card" data-title="Teriyaki Mushroom Lettuce Wraps">
-                <img src="/image/healthyrecipes/appetizers/lettucewraps.jpg" alt="Teriyaki Mushroom Lettuce Wraps" />
+        <a href="/healthyrecipes/maindishes/miso_salmon_bowls.html">
+            <div class="recipe-card" data-title="Miso Salmon Bowls">
+                <img src="/image/healthyrecipes/main/misosalmon.jpg" alt="Miso Salmon Bowls" />
                 <div class="recipe-info">
-                    <p class="time">35 minutes</p>
-                    <h2>Teriyaki Mushroom Lettuce Wraps</h2>
-                </div>
-            </div>
-        </a>
-
-        <a href="/healthyrecipes/appetizers/vegan_nachos.html">
-            <div class="recipe-card" data-title="Vegan Nachos">
-                <img src="/image/healthyrecipes/appetizers/vegannachos.jpg" alt="Vegan Nachos" />
-                <div class="recipe-info">
-                    <p class="time">35 minutes</p>
-                    <h2>Vegan Nachos</h2>
+                    <p class="time">40 minutes</p>
+                    <h2>Miso Salmon Bowls</h2>
                 </div>
             </div>
         </a>
     </div>
 
     <script>
-        fetch('/navbar.html')
+        fetch('/navbar/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
