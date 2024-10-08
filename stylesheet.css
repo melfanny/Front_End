@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background: linear-gradient(to bottom, #FFFFFF, #cdddcd);
 }
 
 
@@ -647,4 +647,85 @@ iframe {
     height: 500px;
     border: none;
     border-radius: 10px;
+}
+
+.comment-container {
+    margin: 50px;
+}
+
+#comments-section {
+    margin: 50px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+#comments-section h2 {
+    font-size: 24px;
+    text-align: center;
+    color: #4d774e;
+}
+
+#comments-container {
+    margin-bottom: 20px;
+}
+
+.comment {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment strong {
+    font-size: 16px;
+    color: #1b5e20;
+}
+
+.comment p {
+    margin: 5px 0;
+    color: #4d774e;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#comment-form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+#comment-form input[type="text"],
+#comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#comment-form textarea {
+    resize: vertical;
+}
+
+#comment-form button {
+    width: 150px;
+    padding: 10px;
+    background-color: #4d774e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#comment-form button:hover {
+    background-color: #1b5e20;
 }

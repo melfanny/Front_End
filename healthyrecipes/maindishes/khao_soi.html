@@ -122,16 +122,21 @@
                     </ul>
 
                 </div>
-
-                <br>
-                <h2 id="video"> Video ⇩</h2>
-                <div class="recipe-content">
-                    <video width="320" height="240" controls>
-                        <source src="#"> Your browser does not support to view the videos
-                    </video>
-                </div>
-
             </div>
+        </div>
+    </div>
+    <div class="comment-container">
+        <div id="comments-section">
+            <h2>COMMENTS</h2>
+            <div id="comments-container"></div>
+            <!-- Form untuk comment -->
+            <form id="comment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Write your comment" required></textarea>
+                <button type="submit">Submit Comment</button>
+            </form>
         </div>
     </div>
 
@@ -143,12 +148,13 @@
             })
             .catch(error => console.error('Error loading navbar:', error));
 
+        let currentImageIndex = 0;
+
         const images = [
             "/image/healthyrecipes/main/khaosoi.jpg",
             "/image/healthyrecipes/main/khao_soi2.jpg",
             "/image/healthyrecipes/main/khao_soi3.png"
         ];
-        let currentImageIndex = 0;
 
         function showImage(index) {
             const imgElement = document.getElementById('recipe-image');
@@ -165,7 +171,38 @@
             showImage(currentImageIndex);
         }
 
+        function updateImage() {
+            showImage(currentImageIndex);
+        }
+
         showImage(currentImageIndex);
+
+        // Ganti image tiap 3 detik
+        setInterval(() => {
+            currentImageIndex = (currentImageIndex + 1) % images.length; // Ganti ke image selanjutnya
+            updateImage();
+        }, 3000);
+
+        document.getElementById('comment-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Mengambil nama dan isi comment
+            const name = document.getElementById('name').value;
+            const comment = document.getElementById('comment').value;
+
+            // Menambahkan comment
+            const commentElement = document.createElement('div');
+            commentElement.classList.add('comment');
+            commentElement.innerHTML = `<strong>${name}:</strong> <p>${comment}</p>`;
+
+            //Comment baru akan muncul paling atas
+            const commentsContainer = document.getElementById('comments-container');
+            commentsContainer.insertBefore(commentElement, commentsContainer.firstChild);
+
+            // Hapus form ketika sudah disubmit
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
     </script>
 
 </body>
