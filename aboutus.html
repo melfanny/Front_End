@@ -29,6 +29,78 @@
     div.aboutus-text h2{
         text-align: center;
     }
+    .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 0px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 30px;
+    width: 100%;
+    padding: 10px 0;
+}
+@media (max-width: 1200px) {
+    .team {
+        flex-wrap: wrap; /* Pada ukuran layar yang lebih kecil, izinkan membungkus */
+        justify-content: center;
+    }
+}
+.team_member {
+    background: #4d774e;
+    margin: 10px;
+    width: 100%;
+    max-width: 280px;
+    padding: 20px;
+    line-height: 1.6;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.team_member:hover {
+    transform: translateY(-10px);
+}
+
+.team_member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    max-width: 150px;
+    border: 3px solid yellowgreen;
+}
+
+.team_member h4 {
+    color: white;
+    text-decoration: underline;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.team_member p.role {
+    color: white;
+    font-size: 16px;
+    margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 </style>
 
 <body>
@@ -37,21 +109,60 @@
         <img src="/image/aboutus/aboutus.jpg" alt="Image" />
         <div class="centered-text">
             <div class="large-text">We Are Clean Bites!</div> 
-            <div class="small-text">
-                Clean Bites is a platform that helps you embrace a healthy lifestyle through recipes and articles tailored to specific diets such as Keto, Vegan, Gluten-Free, and more. We provide a convenient and enjoyable way to support your health journey with balanced and delicious dietary solutions, along with nutrition guides.
-            </div>
         </div>
     </div>
     <div class="aboutus">
-
         <div class="centered-text-aboutus">
             <h1> About Us</h1>
         </div>
 
         <div class="aboutus-text">
-            <h2>Why We Created Clean Bites</h2>
-            Clean Bites was founded by four individuals-Panicia, Paquita Melawi, Melfanny Leono, and Irene Carl Lewis —who share a passion for healthy living and balanced nutrition. Each of us has faced our own challenges when it comes to finding meals that are not only delicious but also meet specific dietary needs such as Keto, Vegan, and Gluten-Free. We realized that many others were struggling with the same issues, and we wanted to provide a solution.
-            Our goal in creating Clean Bites was to make it easier for people to embrace a healthier lifestyle without sacrificing the joy of eating. We believe that everyone deserves access to recipes and guidance that are both nutritious and flavorful. Clean Bites is our way of sharing this journey with others and helping people feel confident in their dietary choices, no matter their preferences or restrictions.
+            <h2>Who We Are</h2>
+            Clean Bites is a platform dedicated to making it easier for you to live a healthy lifestyle through a variety of recipes and articles specifically designed to meet specific dietary needs, such as Keto, Vegan, Gluten-Free, and more. We understand that choosing the right eating patterns can be a challenge, which is why we are here to provide the guidance and inspiration you need to enjoy delicious meals without sacrificing your health. Clean Bites is committed to making healthy living more accessible and enjoyable for everyone.
+        </div>
+            
+        <div class ="wrapper">
+            <div class="aboutus-text">
+                <h2> Our Team</h2>
+            <div class="team">
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/image/our_team/pani.jpg" alt="pani">
+                    </div>
+                    <h4>Panicia</h4>
+                    <p class="role">Co-Founder & Nutrition Enthusias</p>
+                    <p class="role">With a deep passion for healthy living, Panicia has dedicated her life to exploring nutritious recipes that delight the palate. Her expertise in food science ensures that Clean Bites not only tastes good but also provides essential nutrients.</p>
+                </div>
+
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/image/our_team/paqi.jpg" alt="paqi">
+                    </div>
+                    <h4>Paquita Melawi</h4>
+                    <p class="role">Co-Founder & Recipe Developer</p>
+                    <p class="role">Paquita is the creative mind behind many of our innovative recipes. With years of experience in culinary arts, she loves experimenting with flavors and ingredients to make healthy eating exciting and accessible for everyone.</p>
+                </div>
+
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/image/our_team/melfanny.jpg" alt="melfanny">
+                    </div>
+                    <h4>Melfanny Leono</h4>
+                    <p class="role">Co-Founder & Wellness Advocate</p>
+                    <p class="role">Melfanny’s passion for wellness goes beyond food; she advocates for a balanced lifestyle. Her insights into nutrition and fitness help guide the community toward holistic health, making Clean Bites a comprehensive resource.</p>
+                </div>
+
+                <div class="team_member">
+                    <div class="team_img">
+                        <img src="/image/our_team/irene.jpg" alt="irene">
+                    </div>
+                    <h4>Irene Carl Lewis</h4>
+                    <p class="role">Co-Founder & Community Builder</p>
+                    <p class="role">Irene is the heart of Clean Bites, fostering connections within the community. She believes in the power of sharing experiences and encourages our users to engage and learn from one another on their health journeys.</p>
+                </div>
+
+            </div>
+
         </div>
         <div class="aboutus-text">
             <h2>Our Mission</h2>
@@ -102,8 +213,5 @@
             })
             .catch(error => console.error('Error loading footer:', error));
     </script>
-
 <div id="footer-placeholder"></div>
-
-
 </html>
