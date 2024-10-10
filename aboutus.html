@@ -79,39 +79,31 @@
             At Clean Bites, we believe in the power of community. Connect with others on a similar health journey, share your favorite recipes, and learn from the experiences of others. Together, we can make healthy living a fun and rewarding experience.
         </div>
         <div class="aboutus-text">
-            <h2>Contact Us</h2>
-            We'd love to hear from you! Whether you have questions, feedback, or simply want to share your experience with Clean Bites, feel free to reach out to us.
-    
-            <ul><br>
-                <li><strong>Email:</strong> info@cleanbites.com</li>
-                <li><strong>Phone:</strong> +62 812-3456-7890</li>
-                <li><strong>Social Media:</strong> 
-                    <ul>
-                        <li>Instagram : @clean.bites</li>
-                        <li>Facebook : @clean.bites</li>
-                        <li>Twitter : @clean.bites</li>
-                    </ul>
-                </li>
-            </ul>
-        
             We're here to support you on your health journey and are always open to your suggestions. Don't hesitate to connect with us!
         </div>
-
-        
-        
-
-
     </div>
+</body>
 
     <div id="navbar-placeholder"></div>
     <script>
+        //navbar
         fetch('/navbar/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
             })
             .catch(error => console.error('Error loading navbar:', error));
+
+        //footer
+        fetch('/navbar/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
     </script>
-</body>
+
+<div id="footer-placeholder"></div>
+
 
 </html>
