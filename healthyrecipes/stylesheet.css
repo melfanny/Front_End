@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
 
 * {
     margin: 0;
@@ -8,140 +6,14 @@
     font-family: "Playfair Display", serif;
 }
 
-body {
-    background: linear-gradient(to bottom, #FFFFFF, #cdddcd);
-}
-
-
 h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     text-align: center;
 }
 
-
-h2 {
-    color: #1b5e20;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 2px solid #ddd;
-    border-radius: 100px;
-    font-size: 15px;
-    box-sizing: border-box;
-}
-
-.login-container {
-    background-color: #d4d9d1;
-    padding: 40px;
-    border-radius: 10px;
-    width: 350px;
-    text-align: center;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-button:hover {
-    background-color: #4d774e;
-}
-
-.social-log-reg {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px 0;
-}
-
-.social-log-reg a {
-    text-decoration: none;
-}
-
-.log-reg-image {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
-    display: block;
-}
-
-.log-reg-color {
-    margin: 10px;
-    font-size: 20px;
-    color: #4d774e;
-}
-
-@media (min-width: 1024px) {
-    .log-reg-section {
-        display: flex;
-        height: 100vh;
-    }
-
-    .log-reg-color h1 {
-        margin-left: 40%;
-        font-size: 50px;
-        color: #4d774e;
-    }
-
-    .log-reg-color {
-        margin: 0;
-    }
-
-    .log-reg-image {
-        width: 150%;
-        max-height: 92vh;
-        overflow: hidden;
-        object-fit: cover;
-    }
-
-    .login-container {
-        width: 50%;
-        margin-left: 200px;
-        margin-top: 60px;
-    }
-
-    .login-container h1 {
-        color:#4d774e;
-    }
-    
-    .register-container {
-        color:#4d774e;
-    }
-
-    .register-container {
-        width: 50%;
-        margin-left: 350px;
-        margin-top: 60px;
-    }
-}
-
-.register-container input[type="text"],
-.register-container input[type="email"],
-.register-container input[type="password"] {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 2px solid #ddd;
-    border-radius: 100px;
-    font-size: 15px;
-    box-sizing: border-box;
-}
-
-.register-container {
-    background-color: #d4d9d1;
-    padding: 40px;
-    border-radius: 10px;
-    width: 350px;
-    text-align: center;
+body {
+    background: linear-gradient(to bottom, #FFFFFF, #cdddcd);
 }
 
 .image-container {
@@ -197,6 +69,7 @@ button:hover {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding-bottom: 20px;
 }
 
 .recipe-card:hover {
@@ -235,19 +108,6 @@ button:hover {
     }
 }
 
-
-.meals-menu-outer-container {
-    width: 20%;
-    height: auto;
-    background-image: url("image/mealplans/bgplan.jpg");
-    border-radius: 10px;
-    margin: 40px 10px;
-    min-width: 50%;
-    padding: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .recipe-item-container {
     width: auto;
     position: sticky;
@@ -262,6 +122,65 @@ button:hover {
     height: auto;
 }
 
+.r-content {
+    margin: 20px;
+    background-color: #e0e2de;
+    color: #4d774e;
+    max-width: fit-content;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+}
+
+.r-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.r-content h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    line-height: 1.6;
+    animation: textAnimation 3s;
+}
+
+.r-content h2 {
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+    color: #4d774e;
+}
+
+.r-content h2:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #1b5e20;
+    color: #000;
+    padding: 20px;
+    width: 93.5%;
+    text-decoration: none;
+}
+
+.dropdown-content ul,
+ol {
+    padding: 15px;
+}
+
+.dropdown-content ol {
+    padding: 10px;
+}
+
+.dropdown-content li {
+    padding: 5px;
+}
 
 .search-container {
     padding-top: 50px;
@@ -312,10 +231,6 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     line-height: 1.5;
-}
-
-.recipe-card-artikel {
-    text-align: center;
 }
 
 .image-controls {
@@ -408,8 +323,6 @@ p {
     }
 }
 
-
-
 .r-content {
     margin: 20px;
     background-color: #e0e2de;
@@ -445,44 +358,6 @@ p {
 .r-content h2:hover {
     text-decoration: underline;
     font-weight: bold;
-}
-
-div.news-content {
-    text-align: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-div.artikel-container {
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: justify;
-}
-
-div.news-content {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-div.artikel-title h1 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-div.artikel-container h2 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-div.artikel-container p {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-    border-radius: 10px;
 }
 
 .comment-container {
