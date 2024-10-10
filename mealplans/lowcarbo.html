@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Low Carbo Meal Plans</title>
     <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="/mealplans/stylesheet.css" />
 </head>
 
 <style>
@@ -606,66 +607,7 @@
         </div>
     </div>
 
-
-
-
-
-
-    <script>
-        fetch('/navbar/navbar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-placeholder').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading navbar:', error));
-
-        document.querySelectorAll(".dropdownButton").forEach(function (button) {
-            button.addEventListener("click", function () {
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "none" || dropdownContent.style.display === "") {
-                    dropdownContent.style.display = "block";
-                } else {
-                    dropdownContent.style.display = "none";
-                }
-            });
-        });
-
-        //slider ke samping
-        document.addEventListener("DOMContentLoaded", function () {
-            const slider = document.querySelector('.meal-days-slider');
-            let isDragging = false;
-            let startX;
-            let scrollLeft;
-
-
-            slider.addEventListener('mousedown', (e) => {
-                isDragging = true;
-                startX = e.pageX - slider.offsetLeft;
-                scrollLeft = slider.scrollLeft;
-            });
-
-
-            slider.addEventListener('mousemove', (e) => {
-                if (!isDragging) return;
-                e.preventDefault();
-                const x = e.pageX - slider.offsetLeft;
-                const walk = (x - startX) * 2;
-                slider.scrollLeft = scrollLeft - walk;
-            });
-
-
-            slider.addEventListener('mouseup', () => {
-                isDragging = false;
-            });
-
-
-            slider.addEventListener('mouseleave', () => {
-                isDragging = false;
-            });
-        });
-
-
-    </script>
+    <script src="/mealplans/scripts.js"></script>
 
 
 </body>
