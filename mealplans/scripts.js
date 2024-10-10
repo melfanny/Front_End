@@ -1,6 +1,3 @@
-// scripts.js
-
-// Load Navbar
 fetch('/navbar/navbar.html')
     .then(response => response.text())
     .then(data => {
@@ -8,7 +5,7 @@ fetch('/navbar/navbar.html')
     })
     .catch(error => console.error('Error loading navbar:', error));
 
-// Dropdown Button Event Listener
+// Dropdown
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".dropdownButton").forEach(function (button) {
         button.addEventListener("click", function () {
@@ -49,3 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
         isDragging = false;
     });
 });
+
+fetch('/navbar/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading footer:', error));
