@@ -148,9 +148,20 @@ button:hover {
         height: 100vh;
     }
 
+    .log-reg-color h1 {
+        margin-left: 40%;
+        font-size: 50px;
+        color: #4d774e;
+    }
+
+    .log-reg-color {
+        margin: 0;
+    }
+
     .log-reg-image {
         width: 150%;
-        max-height: 90vh;
+        max-height: 92vh;
+        overflow: hidden;
         object-fit: cover;
     }
 
@@ -158,6 +169,14 @@ button:hover {
         width: 50%;
         margin-left: 200px;
         margin-top: 60px;
+    }
+
+    .login-container h1 {
+        color:#4d774e;
+    }
+    
+    .register-container {
+        color:#4d774e;
     }
 
     .register-container {
