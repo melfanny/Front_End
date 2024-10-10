@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheet.css" />
+    <link rel="stylesheet" href="/healthyrecipes/stylesheet.css" />
     <title>Strawberry Galette</title>
 </head>
 
@@ -186,8 +186,7 @@
             // Menambahkan comment
             const commentElement = document.createElement('div');
             commentElement.classList.add('comment');
-            commentElement.innerHTML = `<strong>${name}:</strong> <p>${comment}</p>`;
-
+            commentElement.innerHTML = `<strong>${name} says:</strong> <p>${comment}</p>`;
             //Comment baru akan muncul paling atas
             const commentsContainer = document.getElementById('comments-container');
             commentsContainer.insertBefore(commentElement, commentsContainer.firstChild);
