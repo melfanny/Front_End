@@ -175,6 +175,12 @@ button:hover {
     font-size: 2em;
     font-weight: bold;
 }
+.large-text h1{
+    margin-top: 25px;
+    margin-bottom: 13px;
+    color: #9dc88d;
+    
+}
 
 .small-text {
     padding: 10px;
@@ -316,6 +322,10 @@ p {
 
 .recipe-card-artikel {
     text-align: center;
+}
+.recipe-card-artikel h2 {
+    text-align: center;
+    margin-top: 25px;
 }
 
 .image-controls {
